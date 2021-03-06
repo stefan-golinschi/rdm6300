@@ -78,12 +78,12 @@ class RDM6300:
                 if data is False:
                     continue
 
-                print data
+                print(data)
 
                 serial_connection.flushInput()
 
         except KeyboardInterrupt:
-            print "\nKilled. Serial port was safely closed."
+            print("\nKilled. Serial port was safely closed.")
             serial_connection.close()
 
 if __name__ == "__main__":
